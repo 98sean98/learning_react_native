@@ -5,12 +5,14 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import FirstScreen from './screens/first';
 import SecondScreen from './screens/second';
 import ThirdScreen from './screens/third';
+import FourthScreen from './screens/fourth';
 
 const AppNavigator = createStackNavigator(
   {
   FirstScreen: FirstScreen,
   SecondScreen: SecondScreen,
   ThirdScreen: ThirdScreen,
+  FourthScreen: FourthScreen,
   },
 );
 

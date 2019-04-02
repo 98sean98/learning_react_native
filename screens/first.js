@@ -9,20 +9,21 @@ class ScreenButtons extends Component {
       <View style={styles.container}>
         <Button title="Go to Second Screen" onPress={() => this.props.navigation.navigate('SecondScreen')} />
         <Button title="Go to Third Screen" onPress={() => this.props.navigation.navigate('ThirdScreen')} />
+        <Button title="Go to Fourth Screen" onPress={() => this.props.navigation.navigate('FourthScreen')} />
       </View>
     )
   }
 }
 
-export default class App extends Component {
+export default class FirstScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.container, {flex: 5, marginHorizontal: 20}}>
+        <ScreenButtons navigation={this.props.navigation}/>
+        <View style={styles.container, {flex: 3, marginHorizontal: 20}}>
           <States />
           <Styles />
         </View>
-        <ScreenButtons navigation={this.props.navigation}/>
       </View>
     );
   }
