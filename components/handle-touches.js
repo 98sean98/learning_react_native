@@ -65,7 +65,7 @@ export default class HandleTouches extends Component {
 
   render() {
     return (
-      <View style={styles.container, {flex: 5}} >
+      <View style={[styles.container, {flex: 5}]} >
         <View style={[styles.container, {margin: 10, flexDirection: 'row', justifyContent:'space-between', borderWidth:1, borderColor: 'orange'}]}>
           <Button title="Press Me" onPress={this.handleButtonPress} />
           <Button title="Press Me" onPress={this.handleButtonPress} color="black"/>

@@ -7,9 +7,10 @@ class ScreenButtons extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Go to Second Screen" onPress={() => this.props.navigation.navigate('SecondScreen')} />
-        <Button title="Go to Third Screen" onPress={() => this.props.navigation.navigate('ThirdScreen')} />
-        <Button title="Go to Fourth Screen" onPress={() => this.props.navigation.navigate('FourthScreen')} />
+        <Button title="2nd Screen" onPress={() => this.props.navigation.navigate('SecondScreen')} />
+        <Button title="3rd Screen" onPress={() => this.props.navigation.navigate('ThirdScreen')} />
+        <Button title="4th Screen" onPress={() => this.props.navigation.navigate('FourthScreen')} />
+        <Button title="5th Screen" onPress={() => this.props.navigation.navigate('FifthScreen')} />
       </View>
     )
   }
@@ -20,7 +21,7 @@ export default class FirstScreen extends Component {
     return (
       <View style={styles.container}>
         <ScreenButtons navigation={this.props.navigation}/>
-        <View style={styles.container, {flex: 3, marginHorizontal: 20}}>
+        <View style={[styles.container, {flex: 2, marginHorizontal: 20, borderWidth:1, borderColor:'black'}]}>
           <States />
           <Styles />
         </View>
